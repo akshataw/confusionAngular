@@ -17,6 +17,7 @@
           [(ngModel)]="user.username"
           #username="ngModel"
           name="username"
+          required
         />
         <mat-error *ngIf="username.errors?.required"
           >Username is required</mat-error
@@ -31,6 +32,7 @@
           [(ngModel)]="user.password"
           #password="ngModel"
           name="password"
+          required
         />
         <mat-error *ngIf="password.errors?.required"
           >Password is required</mat-error
