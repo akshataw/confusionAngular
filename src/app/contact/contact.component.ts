@@ -8,7 +8,7 @@ import { Feedback, ContactType } from '../shared/feedback';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  @ViewChild('fform') feedbackFormDirective;
+  @ViewChild('fform', {static: false}) feedbackFormDirective;
   feedbackForm: FormGroup;
   feedback: Feedback;
   contactType = ContactType;
